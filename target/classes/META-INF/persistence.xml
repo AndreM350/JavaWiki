@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+
+    <!--1 persistence unit por banco de dados | Aqui vai a do H2 nesse projeto -->
+
+    <persistence-unit name="NomePersistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <properties>            <!--O value muda de acordo com o tipo de banco de dados -->
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:loja"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+
+            <!-- config para mostrar as query sql no log ao executar os cruds do projeto -->
+            <property name="hibernate.show_sql" value="true"/>
+
+            <!-- config para melhorar o output da consulta no log de execução -->
+            <property name="hibernate.format_sql" value="true"/>
+
+            <!-- config para que o hibernate crie as tabelas automaticamente antes de tentar inserir algo,
+            evitando de ir manualmente no SGBD e criar a tabela -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+        </properties>
+
+
+    </persistence-unit>
+
+</persistence>
