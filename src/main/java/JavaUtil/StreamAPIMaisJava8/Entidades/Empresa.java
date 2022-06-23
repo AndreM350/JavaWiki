@@ -14,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Empresa {
 
+    private String Nome;
     private List<Funcionario> funcionarios;
 
 }

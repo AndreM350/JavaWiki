@@ -34,9 +34,17 @@ public class TesteFuncionarioStream {
         //Java 8 Sem lambda
         funcionarios.forEach( funcionario -> funcionario.setNome("ola") );
         System.out.println("------ > Aqui o nome de todos os funcionários foi trocado");
-        List<String> collectNome = funcionarios.stream().map(Funcionario::getNome).collect(Collectors.toList());
-        List<BigDecimal> collectSalario = funcionarios.stream().map(Funcionario::getSalario).collect(Collectors.toList());
-        List<Integer> collectIdade = funcionarios.stream().map(Funcionario::getIdade).collect(Collectors.toList());
+        List<String> collectNome = funcionarios.stream()
+                .map(Funcionario::getNome)
+                .collect(Collectors.toList());
+
+        List<BigDecimal> collectSalario = funcionarios.stream()
+                .map(Funcionario::getSalario)
+                .collect(Collectors.toList());
+
+        List<Integer> collectIdade = funcionarios.stream()
+                .map(Funcionario::getIdade)
+                .collect(Collectors.toList());
 
 
 

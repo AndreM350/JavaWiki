@@ -30,11 +30,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-<<<<<<< HEAD
             <version>1.18.24</version>
-=======
-            <version>1.18.22</version>
->>>>>>> 83d72577ad415ddbb122f8fd4566993753e08cd8
             <scope>compile</scope>
         </dependency>
 

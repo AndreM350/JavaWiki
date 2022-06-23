@@ -19,5 +19,9 @@ public class Funcionario {
     private BigDecimal salario;
     private List<Telefone> telefones;
 
-
+    public Funcionario(String nome, int idade, BigDecimal salario) {
+        this.nome = nome;
+        this.idade = idade;
+        this.salario = salario;
+    }
 }
