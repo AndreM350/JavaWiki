@@ -9,6 +9,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaWiki-2" />
+        <module name="JavaWiki" />
         <module name="JavaWiki2" />
       </profile>
     </annotationProcessing>
