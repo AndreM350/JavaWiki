@@ -12,6 +12,7 @@ public class testaLambda {
         listaEstados.add("PA");
         listaEstados.add("PB");
         listaEstados.add("AM");
+        listaEstados.add("Teste");
 
 //        for (String estados : listaEstados) {
 //            System.out.println(estados);
