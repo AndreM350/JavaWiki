@@ -10,7 +10,7 @@ public class HashMain1 {
         capitalCities.put("Alemanha", "Berlin");
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington");
-        capitalCities.put("Brasil","");
+        capitalCities.put("Brasil","Brasilia");
 
         System.out.println("\n" + capitalCities);
 
@@ -19,17 +19,17 @@ public class HashMain1 {
 
         System.out.println(capitalCities.size());
 
-        System.out.println("-------------------------------");
+        System.out.println("-------------------------------[1]");
         for (String i : capitalCities.keySet()) {
             System.out.println(i);
         }
 
-        System.out.println("-------------------------------");
+        System.out.println("-------------------------------[2]");
         capitalCities.forEach((x, y) -> {
-            System.out.println(x.toUpperCase());
+            System.out.println(x.toUpperCase() + " - " + y);
         });
 
-        System.out.println("-------------------------------");
+        System.out.println("-------------------------------[3]");
 
         System.out.println(capitalCities.containsValue(""));
 
@@ -38,7 +38,7 @@ public class HashMain1 {
                 v.replace("","Vazio");
             }
         });
-        System.out.println("-------------------------------");
+        System.out.println("-------------------------------[4]");
         System.out.println(capitalCities);
 
 

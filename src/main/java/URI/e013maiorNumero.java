@@ -1,5 +1,8 @@
 package URI;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class e013maiorNumero {
@@ -13,6 +16,15 @@ public class e013maiorNumero {
 
         //int maior = (A+B+C+(A-B-C))
 
+        List<Integer> lista = new ArrayList<>();
+
+        lista.add(A);
+        lista.add(B);
+        lista.add(C);
+
+        Integer max = Collections.max(lista);
+
+        System.out.println(max + " eh o maior");
 
 
     }
